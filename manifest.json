@@ -1,0 +1,21 @@
+{ "manifest_version": 2
+, "name": "__MSG_extName__"
+, "description": "__MSG_extDescription__"
+, "default_locale": "en"
+, "version": "0.1.0"
+, "background":
+    { "scripts": [ "eventPage.js" ]
+    , "persistent": false
+    }
+, "content_scripts":
+  [ { "all_frames": true
+    , "js": [ "document_start.js" ]
+    , "matches":
+      [ "http://www.google.com/reader/view/*"
+      , "https://www.google.com/reader/view/*"
+      ]
+    , "run_at": "document_start"
+    }
+  ]
+, "permissions": [ "tabs" ]
+}

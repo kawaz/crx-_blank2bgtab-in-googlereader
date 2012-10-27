@@ -1,0 +1,9 @@
+{ "extName":
+  { "message": "_blank to background in Google Reader"
+  , "description": "extension name"
+  }
+, "extDescription":
+  { "message": "Googleリーダーで、新しいタブをバックグラウンドで開くようにします。"
+  , "description": "extension description"
+  }
+}
